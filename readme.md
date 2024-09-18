@@ -1,6 +1,12 @@
 # Yahoo Finance Scraper
 This project is a web scraping script that extracts important financial data from Yahoo Finance. Specifically, the script retrieves four types of data:
 
+1. Top Losers - Stocks that have lost the most value in the market.
+2. Top Gainers - Stocks that have gained the most value in the market.
+3. 52-Week Losers - Stocks that have lost the most value over a 52-week period.
+4. 52-Week Gainers - Stocks that have gained the most value over a 52-week period.
+This data is crucial for financial analysis and can assist in developing trading strategies. It can be linked to other projects that involve financial analysis or even automated trading systems. The project leverages several Python packages: requests, BeautifulSoup, pandas, and lxml to achieve the task.
+
 ## **Table of Contents**
 
 - [**Project Overview**](#project-overview)
@@ -9,13 +15,6 @@ This project is a web scraping script that extracts important financial data fro
 - [**Installation**](#installation)
 - [**Usage**](#usage)
 - [**Code Explanation**](#code-explanation)
-
-
-1. Top Losers - Stocks that have lost the most value in the market.
-2. Top Gainers - Stocks that have gained the most value in the market.
-3. 52-Week Losers - Stocks that have lost the most value over a 52-week period.
-4. 52-Week Gainers - Stocks that have gained the most value over a 52-week period.
-This data is crucial for financial analysis and can assist in developing trading strategies. It can be linked to other projects that involve financial analysis or even automated trading systems. The project leverages several Python packages: requests, BeautifulSoup, pandas, and lxml to achieve the task.
 
 ## Project Overview
 The script scrapes Yahoo Finance using Python's BeautifulSoup library to extract HTML tables containing stock data. It processes the tables into a structured format using the Pandas library, which allows for easy manipulation and analysis. The four datasets (top losers, top gainers, 52-week losers, and 52-week gainers) are printed to the console, and they can also be further used or saved for different analytical purposes.
