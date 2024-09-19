@@ -42,19 +42,36 @@ url3 = 'https://finance.yahoo.com/markets/stocks/52-week-gainers/'
 url4 = 'https://finance.yahoo.com/markets/stocks/52-week-losers/'
 data = scrape_detail_page(url1)
 data2 = scrape_detail_page(url2)
-print("Top Losers")
-print(data)
-print("====================================================================================================================================================================================")
-print("Top Gainers")
-print(data2)
-print("====================================================================================================================================================================================")
-print("52 Week Gainers")
 data3 = scrape_detail_page(url3)
-print(data3)
-print("====================================================================================================================================================================================")
-print("52 Week Losers")
 data4 = scrape_detail_page(url4)
-print(data4)
+
+
+while input != False:
+    print("Your Options are:\n1. Top Losers\n2. Top Gainers\n3. 52 Week Gainers\n4. 52 Week Losers\n5. exit")
+    user_input = input("Enter the name of the file you want to save the data to: ")
+
+    if user_input == '':
+        print("No file name entered")
+    elif user_input == 'Top Losers':
+        print("Top Losers")
+        print(data)
+        print("====================================================================================================================================================================================")
+    elif user_input == 'Top Gainers':
+        print("Top Gainers")    
+        print(data2)
+        print("====================================================================================================================================================================================")
+    elif user_input == '52 Week Gainers':
+        print("52 Week Gainers")
+        print(data3)
+        print("====================================================================================================================================================================================")
+    elif user_input == '52 Week Losers':
+        print("52 Week Losers")
+        print(data4)
+        print("====================================================================================================================================================================================")
+    elif user_input == 'exit':
+        input = False
+    else:
+        print("Invalid file name")
 
 
 
